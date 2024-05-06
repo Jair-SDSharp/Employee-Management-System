@@ -16,25 +16,19 @@ Before you begin, ensure you have the following installed on your system:
 1. Clone the repository:
 
 ````
-```
 git clone https://github.com/your-username/employee-management-system.git
-```
 ````
 
 2. Navigate to the project directory:
 
 ````
-```
 cd employee-management-system
-```
 ````
 
 3. Install dependencies:
 
 ````
-```
 npm install
-```
 ````
 
 ### Usage
@@ -42,9 +36,7 @@ npm install
 1. Start the server:
 
 ````
-```
 npm start
-```
 ````
 
 2. Use a REST API client like Postman or cURL to interact with the API endpoints.
@@ -52,7 +44,6 @@ npm start
 - Add Employee: Send a POST request to /employees with JSON payload containing employee data (ID, name, lastName, post, department, salary).
 
 ````
-```
 curl -X POST \
   http://localhost:3000/employees \
   -H 'Content-Type: application/json' \
@@ -64,38 +55,31 @@ curl -X POST \
     "department": "Sales",
     "salary": 50000
   }'
-```
 ````
 
 - Edit Employee: Send a PUT request to /employees/:id with JSON payload containing updated employee data.
 
 ````
-```
 curl -X PUT \
   http://localhost:3000/employees/1 \
   -H 'Content-Type: application/json' \
   -d '{
     "salary": 55000
   }'
-```
 ````
 
 - Delete Employee: Send a DELETE request to /employees/:id.
 
 ````
-```
 curl -X DELETE \
   http://localhost:3000/employees/1
-```
 ````
 
 - List Employees: Send a GET request to /employees.
 
 ````
-```
 curl -X GET \
   http://localhost:3000/employees
-```
 ````
 
 ## Environment Variables
